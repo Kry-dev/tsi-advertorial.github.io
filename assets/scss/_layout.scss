@@ -1,1 +1,22 @@
 // Layout Style
+.navbar {
+	&-brand {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 110%;
+		font-family: $font-family-sans-serif;
+	}
+}
+//header
+.header-top {
+	&__title {
+		opacity: 0.5;
+		color: $white;
+	}
+}
+
+//main
+.main {
+	width: ;
+}
