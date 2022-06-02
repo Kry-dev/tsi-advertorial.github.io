@@ -1,0 +1,43 @@
+.note {
+	border: 1px solid rgba(59, 143, 200, 0.2);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 30px;
+	&-subtitle {
+		font-style: italic;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		opacity: 0.6;
+		margin-bottom: 1rem;
+	}
+	&-wrapper {
+		display: flex;
+		padding: 0 0 0 66px;
+		position: relative;
+	}
+	&-person {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&-message {
+		font-style: italic;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		color: $black;
+	}
+}
