@@ -1,4 +1,46 @@
 .list-icons {
 	display: flex;
 	flex-direction: column;
+	list-style: none;
+	margin: 0 auto 40px;
+	padding: 20px 40px;
+	&.list-icons--svg {
+		li {
+			align-items: center;
+			position: relative;
+			min-height: 90px;
+			padding: 20px 20px 20px 66px;
+		}
+		.list-icons-svg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			svg {
+				width: 100%;
+				max-width: 27px;
+				height: 100%;
+			}
+		}
+	}
+	li {
+		display: flex;
+		align-items: flex-start;
+		border-bottom: 1px solid rgba($primary, 20%);
+		padding: 20px 20px 20px 0;
+		i {
+			margin-right: 16px;
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	&-text {
+	}
+	
 }

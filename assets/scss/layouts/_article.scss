@@ -58,9 +58,38 @@
 		font-size: 18px;
 		line-height: 157%;
 		color: $body-color;
+		
 		b,
 		strong {
 			color: #000;
+		}
+		
+		p {
+			margin-bottom: 30px;
+		}
+		
+		ul {
+			list-style: none;
+			padding-left: 28px;
+			li {
+				position: relative;
+				margin-bottom: 20px;
+				font-style: normal;
+				font-size: 18px;
+				line-height: 157%;
+				
+				&:before {
+					content: "";
+					background: $primary;
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					display: block;
+					position: absolute;
+					left: -30px;
+					top: 9px;
+				}
+			}
 		}
 	}
 	&-title{
@@ -75,6 +104,18 @@
 		font-size: 18px;
 		line-height: 157%;
 		color: $body-color;
+	}
+	
+	&-quote {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 137%;
+		letter-spacing: -0.5px;
+		color: $black;
+		margin-bottom: 40px;
+		padding-left: 28px;
+		border-left: 8px solid $primary;
 	}
 }
 .author {
