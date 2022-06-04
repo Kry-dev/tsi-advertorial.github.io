@@ -1,6 +1,10 @@
 @import "layouts/article";
 @import "layouts/note";
 @import "layouts/list-icons";
+
+.container {
+	max-width: 1100px;
+}
 // Layout Style
 .navbar {
 	&-brand {
