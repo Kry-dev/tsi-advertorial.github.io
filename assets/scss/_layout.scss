@@ -1,6 +1,7 @@
 @import "layouts/article";
 @import "layouts/note";
-@import "layouts/list-icons";
+@import "components/list-icons";
+@import "components/stars";
 
 .container {
 	max-width: 1100px;
