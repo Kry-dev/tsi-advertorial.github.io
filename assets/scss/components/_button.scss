@@ -1,0 +1,18 @@
+.btn {
+	&-action {
+		background: #FE8B7B;
+		box-shadow: 0 8px 0 #FE7864;
+		border-radius: 8px;
+		color: $white;
+		padding: 20px 50px;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 100%;
+		letter-spacing: 0.02em;
+		&:hover,
+		&:focus {
+			box-shadow: 0;
+		}
+	}
+}
