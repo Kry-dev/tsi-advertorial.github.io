@@ -169,10 +169,21 @@
 		}
 		&-content {
 			position: absolute;
-			right: 20%;
-			top: 33%;
+			bottom: 15%;
+			left: 50%;
+			transform: translate(-50%,-50%);
 			z-index: 2;
 			display: flex;
+			@include media-breakpoint-up(sm) {
+				top: 50%;
+				bottom: auto;
+			}
+			@include media-breakpoint-up(md) {
+				right: 20%;
+				left: auto;
+				top: 33%;
+				transform: none;
+			}
 			
 		}
 		&-badge {
@@ -180,18 +191,32 @@
 			width: 180px;
 			height: 180px;
 			border-radius: 50%;
-			left: -100px;
+			left: 50%;
 			top: 50%;
-			transform: translateY(-50%);
+			transform: translate(-50%,-250px);
 			img {
 				width: 100%;
+			}
+			@include media-breakpoint-up(md){
+				left: -100px;
+				top: 50%;
+				transform: translateY(-50%);
 			}
 		}
 		&-rating {
 			background: $white;
-			padding: 30px 80px;
-			border-radius: 0 100px 100px 0;
+			padding: 15px 50px;
+			border-radius: 100px;
 			min-height: 80px;
+			min-width: 270px;
+			@include media-breakpoint-up(sm){
+				padding: 30px 80px;
+			}
+			@include media-breakpoint-up(md){
+				min-width: 334px;
+				border-radius: 0 100px 100px 0;
+				
+			}
 			h3 {
 				font-weight: 700;
 				font-size: 26px;
