@@ -15,8 +15,13 @@
 	}
 	&-wrapper {
 		display: flex;
-		padding: 0 0 0 66px;
+		flex-direction: column;
+		padding: 0;
 		position: relative;
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+			padding: 0 0 0 66px;
+		}
 	}
 	&-person {
 		display: block;
@@ -24,20 +29,30 @@
 		height: 50px;
 		border-radius: 50%;
 		overflow: hidden;
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
+		margin: 0 auto 20px;
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			margin: 0;
+		}
 		img {
 			width: 100%;
 			object-fit: cover;
 		}
 	}
 	&-message {
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
 		font-style: italic;
 		font-weight: 700;
-		font-size: 18px;
-		line-height: 24px;
 		color: $black;
+		@include media-breakpoint-up(md) {
+			font-size: 18px;
+			line-height: 24px;
+			text-align: left;
+		}
 	}
 }

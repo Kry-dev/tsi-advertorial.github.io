@@ -37,7 +37,7 @@
   </nav>
 </header>
 <main class="main container">
-  <div class="row py-5">
+  <div class="row py-4">
     <div class="col-lg-8">
       <article class="article">
         <header class="article-header">
@@ -84,7 +84,7 @@
             <h6 class="author-date">Thursday, May 19, 2022</h6>
           </div>
           <div class="author-right">
-            <a href="#" class="btn btn-sm btn-primary rounded-pill-0">
+            <a href="#" class="btn btn-sm btn-info rounded-0">
               <span class="text-uppercase text-white">News</span>
             </a>
           </div>
@@ -577,7 +577,113 @@
       </article>
     </div>
     <div class="col-lg-4">
-      <aside class="sidebar"></aside>
+      <aside class="sidebar">
+        <div class="testimonials">
+          <div class="sidebar-testimonials-top">
+            <h3 class="text-info">People Say: “EXCELLENT”</h3>
+            <p><b>4.94/5.0</b> based on <b>6551 Reviews</b></p>
+          </div>
+          <!--  Carousel-->
+          <div id="reviewsCarousel" class="carousel slide" data-bs-ride="true" data-bs-touch="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="testimonials-list carousel-inner">
+              
+              <div class="carousel-item active">
+                <div class="testimonials-item">
+                  <div class="testimonials-author">
+                    <a href="#">Wayne</a>
+                    <div class="stars" style="--rating: 5.0;" aria-label="Rating is 5 out of 5."></div>
+                  </div>
+                  <div class="testimonials-status">
+                    <i class="bi bi-patch-check-fill text-primary"></i>
+                    <span>Verified Customer</span>
+                  </div>
+                  <div class="testimonials-text">The information presented was far better than the AARP class that we attended 3 years ago and less time consuming.  Excellent school.</div>
+                </div>
+               
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials-item">
+                  <div class="testimonials-author">
+                    <a href="#">Wayne</a>
+                    <div class="stars" style="--rating: 5.0;" aria-label="Rating is 5 out of 5."></div>
+                  </div>
+                  <div class="testimonials-status">
+                    <i class="bi bi-patch-check-fill text-primary"></i>
+                    <span>Verified Customer</span>
+                  </div>
+                  <div class="testimonials-text">The information presented was far better than the AARP class that we attended 3 years ago and less time consuming.  Excellent school.</div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="testimonials-item">
+                  <div class="testimonials-author">
+                    <a href="#">Wayne</a>
+                    <div class="stars" style="--rating: 5.0;" aria-label="Rating is 5 out of 5."></div>
+                  </div>
+                  <div class="testimonials-status">
+                    <i class="bi bi-patch-check-fill text-primary"></i>
+                    <span>Verified Customer</span>
+                  </div>
+                  <div class="testimonials-text">The information presented was far better than the AARP class that we attended 3 years ago and less time consuming.  Excellent school.</div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarouse" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarouse" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--  Carousel-->
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="..." class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="..." class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </aside>
     </div>
   </div>
 
