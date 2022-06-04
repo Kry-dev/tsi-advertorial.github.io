@@ -1,0 +1,56 @@
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	p {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 157%;
+		text-align: center;
+		
+		b,strong {
+			font-weight: 600;
+			color: $black;
+		}
+	}
+	
+	&-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+	}
+	&-item {
+		flex-direction: column;
+		width: 100%;
+		padding: 30px;
+	}
+	&-author {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 23px;
+		color: $primary;
+		margin-bottom: 8px;
+		a {
+			text-decoration: none;
+		}
+	}
+	.stars {
+		font-size: 18px;
+	}
+	&-status {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 8px;
+	}
+	&-text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 157%;
+		color: $text-dark;
+	}
+}
