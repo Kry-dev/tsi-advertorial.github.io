@@ -3,24 +3,36 @@
 	flex-direction: column;
 	list-style: none;
 	margin: 0 auto 40px;
-	padding: 20px 40px;
+	padding: 10px 15px;
+	@include media-breakpoint-up(md){
+		padding: 20px 40px;
+	}
 	&.list-icons--svg {
 		li {
 			align-items: center;
 			position: relative;
 			min-height: 90px;
-			padding: 20px 20px 20px 66px;
+			padding: 15px 15px 15px 60px;
+			font-size: 16px;
+			@include media-breakpoint-up(md){
+				padding: 20px 20px 20px 66px;
+				font-size: 18px;
+			}
 		}
 		.list-icons-svg {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 50px;
-			height: 50px;
+			width: 45px;
+			height: 45px;
 			position: absolute;
 			left: 0;
 			top: 50%;
 			transform: translateY(-50%);
+			@include media-breakpoint-up(md){
+				width: 50px;
+				height: 50px;
+			}
 			svg {
 				width: 100%;
 				max-width: 27px;
@@ -39,8 +51,6 @@
 		&:last-child {
 			border-bottom: 0;
 		}
-	}
-	&-text {
 	}
 	
 }

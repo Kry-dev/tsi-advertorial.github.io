@@ -57,10 +57,7 @@
 		}
 	}
 	&-text {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 157%;
+		
 		color: $body-color;
 		
 		b,
@@ -69,7 +66,14 @@
 		}
 		
 		p {
+			font-style: normal;
+			font-weight: 400;
+			line-height: 157%;
+			font-size: 16px;
 			margin-bottom: 30px;
+			@include media-breakpoint-up(md) {
+				font-size: 18px;
+			}
 		}
 	}
 	&-list {
@@ -112,13 +116,16 @@
 	&-quote {
 		font-style: normal;
 		font-weight: 700;
-		font-size: 27px;
+		font-size: 22px;
 		line-height: 137%;
 		letter-spacing: -0.5px;
 		color: $black;
 		margin-bottom: 40px;
 		padding-left: 28px;
 		border-left: 8px solid $primary;
+		@include media-breakpoint-up(md) {
+			font-size: 27px;
+		}
 	}
 	
 	&-faq {
