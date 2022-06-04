@@ -21,6 +21,9 @@
 		width: 100%;
 		padding: 0;
 		list-style: none;
+		&.carousel-inner {
+			display: block;
+		}
 	}
 	&-item {
 		flex-direction: column;
@@ -54,5 +57,30 @@
 		font-size: 18px;
 		line-height: 157%;
 		color: $text-dark;
+	}
+	.carousel {
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+	}
+	.carousel-item {
+		height: auto;
+		
+		.testimonials-item {
+			padding: 20px 20px 50px;
+			margin-bottom: 0;
+		}
+	}
+	.carousel-indicators [data-bs-target] {
+		width: 8px;
+		height: 8px;
+		background: rgba($info, 0.5);
+		border: 0;
+		border-radius: 50%;
+		&.active {
+			background: $info;
+		}
+	}
+	.carousel-indicators {
+		margin-bottom: 0;
+		bottom: -30px;
 	}
 }
