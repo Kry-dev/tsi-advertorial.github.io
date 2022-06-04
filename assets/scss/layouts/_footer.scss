@@ -1,0 +1,47 @@
+.footer {
+	padding: 60px 0;
+	background: #467495;
+	color: rgba($white, 0.5);
+	&-title {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 157%;
+		text-align: center;
+	}
+	
+	p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 157%;
+		text-align: center;
+	}
+	&-links {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li + Li {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 3px;
+				height: 3px;
+				border-radius: 50%;
+				background: rgba($white, 0.5);
+				margin: 0 10px;
+			}
+		}
+		a {
+			color: rgba($white, 0.5);
+			text-decoration: none;
+		}
+	}
+}
