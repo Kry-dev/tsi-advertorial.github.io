@@ -10,6 +10,8 @@ var gulp = require('gulp'),
   htmlreplace = require('gulp-html-replace'),
   autoprefixer = require('gulp-autoprefixer'),
   browserSync = require('browser-sync').create(),
+  imagemin = require('gulp-imagemin'),
+  pngquant = require('imagemin-pngquant'),
   svgSprite = require('gulp-svg-sprite');
 
 
@@ -90,6 +92,26 @@ gulp.task('js:minify', function () {
       .pipe(gulp.dest('./dist/assets/js'))
       .pipe(browserSync.stream());
 });
+
+// Compress IMG Task
+
+gulp.task('compress', function () {
+    return gulp.src('assets/img/photos/*{gif,png,jpg}')
+      .pipe(imagemin([
+         
+          imagemin.gifsicle({interlaced: true}),
+          imagemin.mozjpeg({quality: 75, progressive: true}),
+          pngquant([{
+              quality: '70-90', // When used more then 70 the image wasn't saved
+              speed: 1, // The lowest speed of optimization with the highest quality
+              floyd: 1 // Controls level of dithering (0 = none, 1 = full).
+          }]),
+          // imagemin.optipng({optimizationLevel: 5}),
+          
+      ]))
+      .pipe(gulp.dest('./dist/assets/img/photos'))
+});
+
 
 //SVG Sprite
 gulp.task('svgSprite', function () {
