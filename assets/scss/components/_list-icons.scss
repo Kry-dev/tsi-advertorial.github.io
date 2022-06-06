@@ -46,11 +46,22 @@
 		border-bottom: 1px solid rgba($primary, 20%);
 		padding: 20px 20px 20px 0;
 		i {
+			font-size: 22px;
 			margin-right: 16px;
 		}
 		&:last-child {
 			border-bottom: 0;
 		}
 	}
-	
+	.list-icons-text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 157%;
+		color: $black;
+		b,
+		strong {
+			font-weight: 600;
+		}
+	}
 }
