@@ -9,6 +9,8 @@
 	background: $linkedin;
 }
 
-body {
-	font-display: block;
+
+@font-face {
+	font-display: swap;
+	font-family: 'bootstrap-icons';
 }
