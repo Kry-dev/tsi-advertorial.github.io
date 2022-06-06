@@ -1,7 +1,9 @@
 :root {
 	--star-size: 21px;
 	--star-color: #EAF8FF;
+	--star-white-color: #fff;
 	--star-background: #FCB60D;
+	--star-blue-background: #3B8FC8;
 }
 
 .stars {
@@ -18,5 +20,33 @@
 		background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+	&--primary-bg {
+		&:before {
+			background: linear-gradient(90deg, var(--star-blue-background) var(--percent), var(--star-color) var(--percent));
+		}
+	}
+	&--lg {
+		font-size: 18px;
+	}
+}
+
+.stars-blue {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	i {
+		width: 32px;
+		height: 32px;
+		display: inline-flex;
+		font-size: 24px;
+		padding: 4px;
+		color: $white;
+		background: $info;
+		
+		&	+ i {
+			margin-left: 1px;
+		}
 	}
 }

@@ -88,7 +88,7 @@
 			
 			&:before {
 				content: "";
-				background: $primary;
+				background: $info;
 				width: 10px;
 				height: 10px;
 				border-radius: 50%;
@@ -122,7 +122,7 @@
 		color: $black;
 		margin-bottom: 40px;
 		padding-left: 28px;
-		border-left: 8px solid $primary;
+		border-left: 8px solid $info;
 		@include media-breakpoint-up(md) {
 			font-size: 27px;
 		}
