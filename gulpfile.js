@@ -12,6 +12,8 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   imagemin = require('gulp-imagemin'),
   pngquant = require('imagemin-pngquant'),
+  // webp = require('imagemin-webp'),
+  webp = require('gulp-webp'),
   svgSprite = require('gulp-svg-sprite');
 
 
@@ -93,12 +95,12 @@ gulp.task('js:minify', function () {
       .pipe(browserSync.stream());
 });
 
-// Compress IMG Task
+// Images Task
 
-gulp.task('compress', function () {
+gulp.task('images', function () {
     return gulp.src('assets/img/photos/*{gif,png,jpg}')
       .pipe(imagemin([
-         
+
           imagemin.gifsicle({interlaced: true}),
           imagemin.mozjpeg({quality: 75, progressive: true}),
           pngquant([{
@@ -106,12 +108,20 @@ gulp.task('compress', function () {
               speed: 1, // The lowest speed of optimization with the highest quality
               floyd: 1 // Controls level of dithering (0 = none, 1 = full).
           }]),
+
           // imagemin.optipng({optimizationLevel: 5}),
-          
+
       ]))
       .pipe(gulp.dest('./dist/assets/img/photos'))
 });
 
+gulp.task('webp', function () {
+    return gulp.src('assets/img/photos/*{gif,png,jpg}')
+      .pipe(webp({
+          quality: '80'
+      }))
+      .pipe(gulp.dest('./dist/assets/img/photos'))
+});
 
 //SVG Sprite
 gulp.task('svgSprite', function () {
@@ -166,4 +176,4 @@ gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor'
 }));
 
 // Default task
-gulp.task("default", gulp.series("clean", 'build', 'replaceHtmlBlock', 'compress'));
+gulp.task("default", gulp.series("clean", 'build', 'replaceHtmlBlock', 'images', 'webp'));
