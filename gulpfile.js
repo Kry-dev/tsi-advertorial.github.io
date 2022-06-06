@@ -120,6 +120,7 @@ gulp.task('webp', function () {
       .pipe(webp({
           quality: '80'
       }))
+      .pipe(gulp.dest('assets/img/photos/'))
       .pipe(gulp.dest('./dist/assets/img/photos'))
 });
 
