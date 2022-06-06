@@ -38,3 +38,37 @@
 .main {
 
 }
+
+//mobile sticky button
+.mobile-fixed {
+	width: 100%;
+	display: none;
+	flex-direction: column;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	&.is-visible {
+		display: flex;
+	}
+	&.is-hidden {
+		display: none;
+	}
+	h4 {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 110%;
+		text-align: center;
+		letter-spacing: -0.5px;
+	}
+	.btn-action {
+		width: 100%;
+		padding: 11px 50px;
+		font-size: 24px;
+	}
+	@include media-breakpoint-up(sm) {
+		display: none;
+	}
+}
