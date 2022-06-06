@@ -38,7 +38,8 @@
 		line-height: 23px;
 		color: $primary;
 		margin-bottom: 8px;
-		a {
+		a,
+		.name {
 			text-decoration: none;
 		}
 	}
