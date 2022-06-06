@@ -37,9 +37,9 @@
 		font-size: 20px;
 		line-height: 23px;
 		color: $info;
-		margin-bottom: 8px;
 		a,
 		.name {
+			display: inline;
 			text-decoration: none;
 		}
 	}
@@ -51,13 +51,14 @@
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 16px;
-		margin-bottom: 8px;
+		margin-top: 8px;
 	}
 	&-text {
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 157%;
 		color: $text-dark;
+		margin-top: 20px;
 	}
 	.carousel {
 		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
@@ -83,5 +84,9 @@
 	.carousel-indicators {
 		margin-bottom: 0;
 		bottom: -30px;
+	}
+	
+	.stars-blue {
+		margin: 25px auto 20px;
 	}
 }

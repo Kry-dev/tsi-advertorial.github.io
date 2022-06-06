@@ -3,6 +3,22 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,{
+		font-weight: 400;
+		b,
+		strong {
+			font-family: $font-family-base;
+			font-weight: 600;
+			color: $black;
+		}
+	}
+	h5
 	&-header {
 		width: 100%;
 		position: relative;
