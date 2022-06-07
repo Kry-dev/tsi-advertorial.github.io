@@ -131,6 +131,7 @@
 			}
 			img {
 				width: 100%;
+				height: auto;
 			}
 		}
 		&.flex-row-reverse {
@@ -179,6 +180,10 @@
 			top: 10px;
 			left: 10px;
 			right: auto;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
 		}
 		.learnmore-info {
 			padding: 10px;

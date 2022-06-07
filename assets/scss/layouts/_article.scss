@@ -222,7 +222,8 @@
 			top: 50%;
 			transform: translate(-50%,-250px);
 			img {
-				width: 100%;
+				max-width: 100%;
+				height: auto;
 			}
 			@include media-breakpoint-up(md){
 				left: -100px;
