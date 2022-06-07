@@ -160,6 +160,9 @@
 	
 	&--small {
 		max-width: 270px;
+		@include media-breakpoint-down(sm) {
+			margin: 0 auto;
+		}
 		.learnmore-content {
 			flex-direction: column;
 			background: $light;
