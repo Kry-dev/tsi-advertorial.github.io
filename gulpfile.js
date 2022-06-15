@@ -102,9 +102,9 @@ gulp.task('images', function () {
       .pipe(imagemin([
 
           imagemin.gifsicle({interlaced: true}),
-          imagemin.mozjpeg({quality: 75, progressive: true}),
+          imagemin.mozjpeg({quality: 70, progressive: true}),
           pngquant([{
-              quality: '70-90', // When used more then 70 the image wasn't saved
+              quality: '60-70', // When used more then 70 the image wasn't saved
               speed: 1, // The lowest speed of optimization with the highest quality
               floyd: 1 // Controls level of dithering (0 = none, 1 = full).
           }]),
