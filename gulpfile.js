@@ -118,7 +118,7 @@ gulp.task('images', function () {
 gulp.task('webp', function () {
     return gulp.src('assets/img/photos/*{gif,png,jpg}')
       .pipe(webp({
-          quality: '80'
+          quality: '65'
       }))
       .pipe(gulp.dest('assets/img/photos/'))
       .pipe(gulp.dest('./dist/assets/img/photos'))
